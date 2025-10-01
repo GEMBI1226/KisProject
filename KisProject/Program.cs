@@ -17,6 +17,7 @@ namespace KisProject
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Számológép());
+            int a = 0;
         }
     }
 }
