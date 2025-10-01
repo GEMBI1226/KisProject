@@ -21,5 +21,10 @@ namespace KisProject
         {
 
         }
+
+        private void Number1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
