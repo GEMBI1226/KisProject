@@ -17,6 +17,12 @@ namespace KisProject
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Számológép());
+            int a = 0;
+            if (a == 0)
+            {
+                Console.WriteLine("Ez nulla.");
+            }
+        }
             for(int i=-10 , i<0; i++)
             {
                 if (i % 2 == 0)
