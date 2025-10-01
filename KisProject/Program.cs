@@ -30,6 +30,7 @@ namespace KisProject
                     Console.WriteLine(i);
                 }
             }
+            int b = 4;
         }
     }
 }
