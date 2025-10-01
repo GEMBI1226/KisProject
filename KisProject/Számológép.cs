@@ -16,5 +16,10 @@ namespace KisProject
         {
             InitializeComponent();
         }
+
+        private void Számológép_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

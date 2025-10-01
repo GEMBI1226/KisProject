@@ -30,13 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // Számológép
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(994, 450);
-            this.Name = "Form1";
+            this.Name = "Számológép";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Számológép_Load);
             this.ResumeLayout(false);
 
         }
