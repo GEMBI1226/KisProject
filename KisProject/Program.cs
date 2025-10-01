@@ -22,13 +22,14 @@ namespace KisProject
             {
                 Console.WriteLine("Ez nulla.");
             }
-        }
-            for(int i=-10 , i<0; i++)
+
+            for (int i = -10; i < 0; i++)
             {
                 if (i % 2 == 0)
                 {
                     Console.WriteLine(i);
                 }
             }
+        }
     }
 }
