@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Számológép));
             this.Number1 = new System.Windows.Forms.Button();
             this.Number2 = new System.Windows.Forms.Button();
             this.Number3 = new System.Windows.Forms.Button();
@@ -303,7 +304,7 @@
             this.Screen.BackColor = System.Drawing.Color.Black;
             this.Screen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Screen.ForeColor = System.Drawing.Color.White;
-            this.Screen.Location = new System.Drawing.Point(36, 118);
+            this.Screen.Location = new System.Drawing.Point(36, 107);
             this.Screen.Name = "Screen";
             this.Screen.Size = new System.Drawing.Size(427, 54);
             this.Screen.TabIndex = 20;
@@ -336,6 +337,7 @@
             this.Controls.Add(this.Number3);
             this.Controls.Add(this.Number2);
             this.Controls.Add(this.Number1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Számológép";
             this.Text = "Számológép";
             this.Load += new System.EventHandler(this.Számológép_Load);
