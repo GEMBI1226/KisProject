@@ -66,8 +66,17 @@ namespace KisProject
 
         private void btnSimpleClear_Click(object sender, EventArgs e)
         {
-            GlobalVar.onScreen = GlobalVar.onScreen.Substring(0, GlobalVar.onScreen.Length - 1);
-            Screen.Text = GlobalVar.onScreen;
+            if (GlobalVar.onScreen == "Syntax Error" || GlobalVar.onScreen == "")
+            {
+                GlobalVar.onScreen = "";
+                Screen.Text = GlobalVar.onScreen;
+            }
+            else
+            {
+                GlobalVar.onScreen = GlobalVar.onScreen.Substring(0, GlobalVar.onScreen.Length - 1);
+                Screen.Text = GlobalVar.onScreen;
+            }
+                
 
 
         }
@@ -316,33 +325,32 @@ namespace KisProject
             try
             {
                 string expression = GlobalVar.onScreen;
+
+                // Mindig pont legyen a tizedes
+                expression = expression.Replace(",", ".");
+
                 DataTable dt = new DataTable();
                 object result = dt.Compute(expression, null);
 
-                double varResult = Convert.ToDouble(result);
+                // Konvertálás invariant kultúrával
+                double varResult = Convert.ToDouble(result, System.Globalization.CultureInfo.InvariantCulture);
 
                 if (double.IsNaN(varResult) || double.IsInfinity(varResult))
                 {
                     throw new Exception("Végtelen lett az eredmény");
                 }
 
-
-
-                GlobalVar.onScreen = result.ToString();
+                // Kiírás mindig ponttal
+                GlobalVar.onScreen = varResult.ToString(System.Globalization.CultureInfo.InvariantCulture);
                 Screen.Text = GlobalVar.onScreen;
-
             }
-
-
-
-            catch (Exception ex) // Try Catch-et lehet hogy lelehet cserelni csak az ifben valo ellenorzesre de ugy volttam vele alapbol csak Try catchet irtam majd szar let :D
+            catch (Exception ex)
             {
                 GlobalVar.onScreen = "Syntax Error";
                 Screen.Text = GlobalVar.onScreen;
             }
-
-
         }
+
 
         private void Screen_Click(object sender, EventArgs e)
         {
@@ -383,6 +391,45 @@ namespace KisProject
 
             GlobalVar.onScreen = before + lastNumber;
             Screen.Text = GlobalVar.onScreen;
+        }
+
+        private void btnPercent_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(GlobalVar.onScreen) || GlobalVar.onScreen == "Syntax Error")
+                return;
+
+            string input = GlobalVar.onScreen;
+
+            char[] ops = new char[] { '+', '-', '*', '/' };
+
+            int lastOpIndex = input.LastIndexOfAny(ops);
+
+            string before = "";
+            string lastNumber = input;
+
+            if (lastOpIndex != -1)
+            {
+                before = input.Substring(0, lastOpIndex + 1);
+                lastNumber = input.Substring(lastOpIndex + 1);
+            }
+
+            if (string.IsNullOrEmpty(lastNumber))
+                return;
+
+
+            if (double.TryParse(lastNumber, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out double number))
+            {
+                double lastNumberPercent = number / 100.0;
+
+                GlobalVar.onScreen = before + lastNumberPercent.ToString(System.Globalization.CultureInfo.InvariantCulture);
+                Screen.Text = GlobalVar.onScreen;
+            }
+
+            else
+            {
+                GlobalVar.onScreen = "Syntax Error";
+                Screen.Text = GlobalVar.onScreen;
+            }
         }
     }
 }
