@@ -329,6 +329,7 @@
             this.btnSingChangeKey.TabIndex = 21;
             this.btnSingChangeKey.Text = "+/-";
             this.btnSingChangeKey.UseVisualStyleBackColor = false;
+            this.btnSingChangeKey.Click += new System.EventHandler(this.btnSingChangeKey_Click_1);
             // 
             // btnPercent
             // 
