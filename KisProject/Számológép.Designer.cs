@@ -54,13 +54,13 @@
             // 
             // Number1
             // 
-            this.Number1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Number1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Number1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number1.ForeColor = System.Drawing.Color.White;
-            this.Number1.Location = new System.Drawing.Point(93, 498);
-            this.Number1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Number1.Location = new System.Drawing.Point(20, 349);
+            this.Number1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Number1.Name = "Number1";
-            this.Number1.Size = new System.Drawing.Size(162, 41);
+            this.Number1.Size = new System.Drawing.Size(78, 78);
             this.Number1.TabIndex = 0;
             this.Number1.Text = "1";
             this.Number1.UseVisualStyleBackColor = false;
@@ -68,13 +68,13 @@
             // 
             // Number2
             // 
-            this.Number2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Number2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Number2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number2.ForeColor = System.Drawing.Color.White;
-            this.Number2.Location = new System.Drawing.Point(261, 498);
-            this.Number2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Number2.Location = new System.Drawing.Point(102, 349);
+            this.Number2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Number2.Name = "Number2";
-            this.Number2.Size = new System.Drawing.Size(160, 41);
+            this.Number2.Size = new System.Drawing.Size(78, 78);
             this.Number2.TabIndex = 1;
             this.Number2.Text = "2";
             this.Number2.UseVisualStyleBackColor = false;
@@ -82,13 +82,13 @@
             // 
             // Number3
             // 
-            this.Number3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Number3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Number3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number3.ForeColor = System.Drawing.Color.White;
-            this.Number3.Location = new System.Drawing.Point(427, 498);
-            this.Number3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Number3.Location = new System.Drawing.Point(184, 349);
+            this.Number3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Number3.Name = "Number3";
-            this.Number3.Size = new System.Drawing.Size(158, 41);
+            this.Number3.Size = new System.Drawing.Size(78, 78);
             this.Number3.TabIndex = 2;
             this.Number3.Text = "3";
             this.Number3.UseVisualStyleBackColor = false;
@@ -96,13 +96,13 @@
             // 
             // Number6
             // 
-            this.Number6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Number6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Number6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number6.ForeColor = System.Drawing.Color.White;
-            this.Number6.Location = new System.Drawing.Point(427, 396);
-            this.Number6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Number6.Location = new System.Drawing.Point(184, 267);
+            this.Number6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Number6.Name = "Number6";
-            this.Number6.Size = new System.Drawing.Size(158, 41);
+            this.Number6.Size = new System.Drawing.Size(78, 78);
             this.Number6.TabIndex = 5;
             this.Number6.Text = "6";
             this.Number6.UseVisualStyleBackColor = false;
@@ -110,13 +110,13 @@
             // 
             // Number5
             // 
-            this.Number5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Number5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Number5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number5.ForeColor = System.Drawing.Color.White;
-            this.Number5.Location = new System.Drawing.Point(261, 396);
-            this.Number5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Number5.Location = new System.Drawing.Point(102, 267);
+            this.Number5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Number5.Name = "Number5";
-            this.Number5.Size = new System.Drawing.Size(160, 41);
+            this.Number5.Size = new System.Drawing.Size(78, 78);
             this.Number5.TabIndex = 4;
             this.Number5.Text = "5";
             this.Number5.UseVisualStyleBackColor = false;
@@ -124,13 +124,13 @@
             // 
             // Number4
             // 
-            this.Number4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Number4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Number4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number4.ForeColor = System.Drawing.Color.White;
-            this.Number4.Location = new System.Drawing.Point(93, 396);
-            this.Number4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Number4.Location = new System.Drawing.Point(20, 267);
+            this.Number4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Number4.Name = "Number4";
-            this.Number4.Size = new System.Drawing.Size(162, 41);
+            this.Number4.Size = new System.Drawing.Size(78, 78);
             this.Number4.TabIndex = 3;
             this.Number4.Text = "4";
             this.Number4.UseVisualStyleBackColor = false;
@@ -138,13 +138,13 @@
             // 
             // Number9
             // 
-            this.Number9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Number9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Number9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number9.ForeColor = System.Drawing.Color.White;
-            this.Number9.Location = new System.Drawing.Point(427, 297);
-            this.Number9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Number9.Location = new System.Drawing.Point(184, 185);
+            this.Number9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Number9.Name = "Number9";
-            this.Number9.Size = new System.Drawing.Size(158, 41);
+            this.Number9.Size = new System.Drawing.Size(78, 78);
             this.Number9.TabIndex = 8;
             this.Number9.Text = "9";
             this.Number9.UseVisualStyleBackColor = false;
@@ -152,13 +152,13 @@
             // 
             // Number8
             // 
-            this.Number8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Number8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Number8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number8.ForeColor = System.Drawing.Color.White;
-            this.Number8.Location = new System.Drawing.Point(261, 297);
-            this.Number8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Number8.Location = new System.Drawing.Point(102, 185);
+            this.Number8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Number8.Name = "Number8";
-            this.Number8.Size = new System.Drawing.Size(160, 41);
+            this.Number8.Size = new System.Drawing.Size(78, 78);
             this.Number8.TabIndex = 7;
             this.Number8.Text = "8";
             this.Number8.UseVisualStyleBackColor = false;
@@ -166,13 +166,13 @@
             // 
             // Number7
             // 
-            this.Number7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Number7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Number7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number7.ForeColor = System.Drawing.Color.White;
-            this.Number7.Location = new System.Drawing.Point(93, 297);
-            this.Number7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Number7.Location = new System.Drawing.Point(20, 185);
+            this.Number7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Number7.Name = "Number7";
-            this.Number7.Size = new System.Drawing.Size(162, 41);
+            this.Number7.Size = new System.Drawing.Size(78, 78);
             this.Number7.TabIndex = 6;
             this.Number7.Text = "7";
             this.Number7.UseVisualStyleBackColor = false;
@@ -180,13 +180,13 @@
             // 
             // Number0
             // 
-            this.Number0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Number0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.Number0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number0.ForeColor = System.Drawing.Color.White;
-            this.Number0.Location = new System.Drawing.Point(261, 597);
-            this.Number0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Number0.Location = new System.Drawing.Point(102, 431);
+            this.Number0.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Number0.Name = "Number0";
-            this.Number0.Size = new System.Drawing.Size(160, 41);
+            this.Number0.Size = new System.Drawing.Size(78, 78);
             this.Number0.TabIndex = 9;
             this.Number0.Text = "0";
             this.Number0.UseVisualStyleBackColor = false;
@@ -194,13 +194,13 @@
             // 
             // btnDecimal
             // 
-            this.btnDecimal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnDecimal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.btnDecimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDecimal.ForeColor = System.Drawing.Color.White;
-            this.btnDecimal.Location = new System.Drawing.Point(427, 597);
-            this.btnDecimal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDecimal.Location = new System.Drawing.Point(184, 431);
+            this.btnDecimal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDecimal.Name = "btnDecimal";
-            this.btnDecimal.Size = new System.Drawing.Size(158, 41);
+            this.btnDecimal.Size = new System.Drawing.Size(78, 78);
             this.btnDecimal.TabIndex = 10;
             this.btnDecimal.Text = ",";
             this.btnDecimal.UseVisualStyleBackColor = false;
@@ -208,13 +208,13 @@
             // 
             // btnEquals
             // 
-            this.btnEquals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEquals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(149)))), ((int)(((byte)(0)))));
             this.btnEquals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEquals.ForeColor = System.Drawing.Color.White;
-            this.btnEquals.Location = new System.Drawing.Point(591, 597);
-            this.btnEquals.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEquals.Location = new System.Drawing.Point(266, 431);
+            this.btnEquals.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEquals.Name = "btnEquals";
-            this.btnEquals.Size = new System.Drawing.Size(158, 41);
+            this.btnEquals.Size = new System.Drawing.Size(78, 78);
             this.btnEquals.TabIndex = 14;
             this.btnEquals.Text = "=";
             this.btnEquals.UseVisualStyleBackColor = false;
@@ -222,13 +222,13 @@
             // 
             // btnMultiplication
             // 
-            this.btnMultiplication.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnMultiplication.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(149)))), ((int)(((byte)(0)))));
             this.btnMultiplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMultiplication.ForeColor = System.Drawing.Color.White;
-            this.btnMultiplication.Location = new System.Drawing.Point(591, 297);
-            this.btnMultiplication.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMultiplication.Location = new System.Drawing.Point(266, 185);
+            this.btnMultiplication.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMultiplication.Name = "btnMultiplication";
-            this.btnMultiplication.Size = new System.Drawing.Size(158, 41);
+            this.btnMultiplication.Size = new System.Drawing.Size(78, 78);
             this.btnMultiplication.TabIndex = 13;
             this.btnMultiplication.Text = "X";
             this.btnMultiplication.UseVisualStyleBackColor = false;
@@ -236,13 +236,13 @@
             // 
             // btnMinus
             // 
-            this.btnMinus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnMinus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(149)))), ((int)(((byte)(0)))));
             this.btnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinus.ForeColor = System.Drawing.Color.White;
-            this.btnMinus.Location = new System.Drawing.Point(591, 396);
-            this.btnMinus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMinus.Location = new System.Drawing.Point(266, 267);
+            this.btnMinus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMinus.Name = "btnMinus";
-            this.btnMinus.Size = new System.Drawing.Size(158, 41);
+            this.btnMinus.Size = new System.Drawing.Size(78, 78);
             this.btnMinus.TabIndex = 12;
             this.btnMinus.Text = "-";
             this.btnMinus.UseVisualStyleBackColor = false;
@@ -250,13 +250,13 @@
             // 
             // btnPlus
             // 
-            this.btnPlus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnPlus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(149)))), ((int)(((byte)(0)))));
             this.btnPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlus.ForeColor = System.Drawing.Color.White;
-            this.btnPlus.Location = new System.Drawing.Point(591, 497);
-            this.btnPlus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPlus.Location = new System.Drawing.Point(266, 349);
+            this.btnPlus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPlus.Name = "btnPlus";
-            this.btnPlus.Size = new System.Drawing.Size(158, 42);
+            this.btnPlus.Size = new System.Drawing.Size(78, 78);
             this.btnPlus.TabIndex = 11;
             this.btnPlus.Text = "+";
             this.btnPlus.UseVisualStyleBackColor = false;
@@ -264,13 +264,13 @@
             // 
             // btnDivision
             // 
-            this.btnDivision.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnDivision.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(149)))), ((int)(((byte)(0)))));
             this.btnDivision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDivision.ForeColor = System.Drawing.Color.White;
-            this.btnDivision.Location = new System.Drawing.Point(591, 204);
-            this.btnDivision.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnDivision.Location = new System.Drawing.Point(266, 103);
+            this.btnDivision.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDivision.Name = "btnDivision";
-            this.btnDivision.Size = new System.Drawing.Size(158, 41);
+            this.btnDivision.Size = new System.Drawing.Size(78, 78);
             this.btnDivision.TabIndex = 18;
             this.btnDivision.Text = "÷";
             this.btnDivision.UseVisualStyleBackColor = false;
@@ -278,13 +278,13 @@
             // 
             // btnClear
             // 
-            this.btnClear.BackColor = System.Drawing.Color.DimGray;
+            this.btnClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.ForeColor = System.Drawing.Color.White;
-            this.btnClear.Location = new System.Drawing.Point(93, 204);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnClear.Location = new System.Drawing.Point(20, 103);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(162, 41);
+            this.btnClear.Size = new System.Drawing.Size(78, 78);
             this.btnClear.TabIndex = 15;
             this.btnClear.Text = "AC";
             this.btnClear.UseVisualStyleBackColor = false;
@@ -292,14 +292,14 @@
             // 
             // btnSimpleClear
             // 
-            this.btnSimpleClear.BackColor = System.Drawing.Color.DimGray;
+            this.btnSimpleClear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
             this.btnSimpleClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSimpleClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnSimpleClear.ForeColor = System.Drawing.Color.White;
-            this.btnSimpleClear.Location = new System.Drawing.Point(261, 204);
-            this.btnSimpleClear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSimpleClear.Location = new System.Drawing.Point(102, 103);
+            this.btnSimpleClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSimpleClear.Name = "btnSimpleClear";
-            this.btnSimpleClear.Size = new System.Drawing.Size(160, 41);
+            this.btnSimpleClear.Size = new System.Drawing.Size(78, 78);
             this.btnSimpleClear.TabIndex = 19;
             this.btnSimpleClear.Text = "⌫";
             this.btnSimpleClear.UseVisualStyleBackColor = false;
@@ -307,25 +307,27 @@
             // 
             // Screen
             // 
-            this.Screen.BackColor = System.Drawing.Color.Black;
+            this.Screen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(30)))));
             this.Screen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Screen.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.Screen.ForeColor = System.Drawing.Color.White;
-            this.Screen.Location = new System.Drawing.Point(93, 106);
+            this.Screen.Location = new System.Drawing.Point(20, 22);
+            this.Screen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Screen.Name = "Screen";
-            this.Screen.Size = new System.Drawing.Size(656, 44);
+            this.Screen.Size = new System.Drawing.Size(324, 65);
             this.Screen.TabIndex = 20;
             this.Screen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Screen.Click += new System.EventHandler(this.Screen_Click);
+            this.Screen.Click += new System.EventHandler(this.Számológép_Load);
             // 
             // btnSingChangeKey
             // 
-            this.btnSingChangeKey.BackColor = System.Drawing.Color.DimGray;
+            this.btnSingChangeKey.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(44)))), ((int)(((byte)(44)))));
             this.btnSingChangeKey.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSingChangeKey.ForeColor = System.Drawing.Color.White;
-            this.btnSingChangeKey.Location = new System.Drawing.Point(93, 597);
-            this.btnSingChangeKey.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSingChangeKey.Location = new System.Drawing.Point(20, 431);
+            this.btnSingChangeKey.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSingChangeKey.Name = "btnSingChangeKey";
-            this.btnSingChangeKey.Size = new System.Drawing.Size(162, 41);
+            this.btnSingChangeKey.Size = new System.Drawing.Size(78, 78);
             this.btnSingChangeKey.TabIndex = 21;
             this.btnSingChangeKey.Text = "+/-";
             this.btnSingChangeKey.UseVisualStyleBackColor = false;
@@ -333,13 +335,13 @@
             // 
             // btnPercent
             // 
-            this.btnPercent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnPercent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
             this.btnPercent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPercent.ForeColor = System.Drawing.Color.White;
-            this.btnPercent.Location = new System.Drawing.Point(427, 204);
-            this.btnPercent.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPercent.Location = new System.Drawing.Point(184, 103);
+            this.btnPercent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPercent.Name = "btnPercent";
-            this.btnPercent.Size = new System.Drawing.Size(158, 41);
+            this.btnPercent.Size = new System.Drawing.Size(78, 78);
             this.btnPercent.TabIndex = 22;
             this.btnPercent.Text = "%";
             this.btnPercent.UseVisualStyleBackColor = false;
@@ -347,10 +349,10 @@
             // 
             // Számológép
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(837, 721);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(30)))));
+            this.ClientSize = new System.Drawing.Size(363, 534);
             this.Controls.Add(this.btnPercent);
             this.Controls.Add(this.btnSingChangeKey);
             this.Controls.Add(this.Screen);
@@ -373,7 +375,9 @@
             this.Controls.Add(this.Number2);
             this.Controls.Add(this.Number1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximumSize = new System.Drawing.Size(379, 573);
+            this.MinimumSize = new System.Drawing.Size(379, 573);
             this.Name = "Számológép";
             this.Text = "Számológép";
             this.Load += new System.EventHandler(this.Számológép_Load);

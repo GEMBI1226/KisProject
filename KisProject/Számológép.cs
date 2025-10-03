@@ -21,67 +21,34 @@ namespace KisProject
         private void Számológép_Load(object sender, EventArgs e)
         {
             Screen.Text = GlobalVar.onScreen;
-            this.BackColor = Color.Black; // háttér iPhone-szerű
 
-            int diameter = 60; // fix körméret
 
             foreach (Control c in this.Controls)
             {
                 if (c is Button btn)
                 {
-                    // "0" gomb: dupla széles
-                    if (btn.Text == "0")
-                    {
-                        btn.Width = diameter;
-                        btn.Height = diameter;
-                        GraphicsPath path0 = new GraphicsPath();
-                        path0.AddEllipse(0, 0, btn.Width, btn.Height);
-                        btn.Region = new Region(path0);
-                    }
-                    else
-                    {
-                        btn.Width = diameter;
-                        btn.Height = diameter;
-                        GraphicsPath path = new GraphicsPath();
-                        path.AddEllipse(0, 0, diameter, diameter);
-                        btn.Region = new Region(path);
-                    }
+                    // A gomb méretének a kisebbik oldalhoz igazítása
+                    int size = Math.Min(btn.Width, btn.Height);
+                    btn.Width = size;
+                    btn.Height = size;
 
-                    // szöveg középre
+                    // Kör létrehozása
+                    GraphicsPath path = new GraphicsPath();
+                    path.AddEllipse(0, 0, size, size);
+                    btn.Region = new Region(path);
+
+                    // Szöveg középre
                     btn.TextAlign = ContentAlignment.MiddleCenter;
                     btn.Font = new Font("Segoe UI", 16, FontStyle.Bold);
                     btn.FlatStyle = FlatStyle.Flat;
                     btn.FlatAppearance.BorderSize = 0;
 
-                    // itt adjuk a távolságot
+                    // Margin a gombok között
                     btn.Margin = new Padding(5);
-
-                    // színezés iPhone szerint
-                    if (btn.Text == "÷" || btn.Text == "×" || btn.Text == "-" || btn.Text == "+")
-                    {
-                        btn.BackColor = Color.Orange;
-                        btn.ForeColor = Color.White;
-                    }
-                    else if (btn.Text == "AC" || btn.Text == "+/-" || btn.Text == "%")
-                    {
-                        btn.BackColor = Color.LightGray;
-                        btn.ForeColor = Color.Black;
-                    }
-                    else
-                    {
-                        btn.BackColor = Color.FromArgb(64, 64, 64);
-                        btn.ForeColor = Color.White;
-                    }
                 }
             }
+
         }
-
-
-
-
-
-
-
 
 
         private void Number1_Click(object sender, EventArgs e)
@@ -119,7 +86,7 @@ namespace KisProject
                 GlobalVar.onScreen = GlobalVar.onScreen.Substring(0, GlobalVar.onScreen.Length - 1);
                 Screen.Text = GlobalVar.onScreen;
             }
-                
+
 
 
         }
@@ -315,20 +282,6 @@ namespace KisProject
             }
         }
 
-        private void btnSingChangeKey_Click(object sender, EventArgs e)
-        {
-            // ez az a gomb ami ha beirunk egy számot - re váltja és fordítva
-            if (GlobalVar.onScreen.StartsWith("-"))
-            {
-                GlobalVar.onScreen = GlobalVar.onScreen.Substring(1);
-            }
-            else
-            {
-                GlobalVar.onScreen = "-" + GlobalVar.onScreen;
-            }
-            Screen.Text = GlobalVar.onScreen;
-
-        }
 
         private void Number0_Click(object sender, EventArgs e)
         {
@@ -344,8 +297,6 @@ namespace KisProject
                 Screen.Text = GlobalVar.onScreen;
             }
 
-
-
         }
 
         private void btnDecimal_Click(object sender, EventArgs e)
@@ -360,7 +311,6 @@ namespace KisProject
                 GlobalVar.onScreen += ".";
                 Screen.Text = GlobalVar.onScreen;
             }
-
         }
 
         private void btnEquals_Click(object sender, EventArgs e)
@@ -400,6 +350,8 @@ namespace KisProject
 
         }
 
+
+
         private void btnSingChangeKey_Click_1(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(GlobalVar.onScreen) || GlobalVar.onScreen == "Syntax Error")
@@ -409,7 +361,28 @@ namespace KisProject
 
             char[] ops = new char[] { '+', '-', '*', '/' };
 
-            int lastOpIndex = input.LastIndexOfAny(ops);
+            int lastOpIndex = -1;
+            for (int i = input.Length - 1; i >= 0; i--)
+            {
+                if (Array.IndexOf(ops, input[i]) != -1)
+                {
+                    if (input[i] == '-')
+                    {
+                        if (i == 0)
+                        {
+                            continue;
+                        }
+
+                        if (Array.IndexOf(ops, input[i - 1]) != -1)
+                        {
+                            continue;
+                        }
+                    }
+
+                    lastOpIndex = i;
+                    break;
+                }
+            }
 
             string before = "";
             string lastNumber = input;
@@ -419,7 +392,6 @@ namespace KisProject
                 before = input.Substring(0, lastOpIndex + 1);
                 lastNumber = input.Substring(lastOpIndex + 1);
             }
-
             if (string.IsNullOrEmpty(lastNumber))
                 return;
 
@@ -435,6 +407,7 @@ namespace KisProject
             GlobalVar.onScreen = before + lastNumber;
             Screen.Text = GlobalVar.onScreen;
         }
+
 
         private void btnPercent_Click(object sender, EventArgs e)
         {
