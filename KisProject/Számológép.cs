@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace KisProject
 {
-    public partial class Számológép : Form 
+    public partial class Számológép : Form
     {
         public Számológép()
         {
@@ -66,7 +66,7 @@ namespace KisProject
 
         private void btnSimpleClear_Click(object sender, EventArgs e)
         {
-            GlobalVar.onScreen = GlobalVar.onScreen.Substring(0, GlobalVar.onScreen.Length -1) ;
+            GlobalVar.onScreen = GlobalVar.onScreen.Substring(0, GlobalVar.onScreen.Length - 1);
             Screen.Text = GlobalVar.onScreen;
 
 
@@ -280,7 +280,7 @@ namespace KisProject
 
         private void Number0_Click(object sender, EventArgs e)
         {
-            if(GlobalVar.onScreen == "Syntax Error")
+            if (GlobalVar.onScreen == "Syntax Error")
             {
                 GlobalVar.onScreen = "";
                 GlobalVar.onScreen += "0";
@@ -292,7 +292,7 @@ namespace KisProject
                 Screen.Text = GlobalVar.onScreen;
             }
 
-                
+
 
         }
 
@@ -321,7 +321,7 @@ namespace KisProject
 
                 double varResult = Convert.ToDouble(result);
 
-                if(double.IsNaN(varResult)|| double.IsInfinity(varResult))
+                if (double.IsNaN(varResult) || double.IsInfinity(varResult))
                 {
                     throw new Exception("Végtelen lett az eredmény");
                 }
@@ -347,6 +347,42 @@ namespace KisProject
         private void Screen_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSingChangeKey_Click_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(GlobalVar.onScreen) || GlobalVar.onScreen == "Syntax Error")
+                return;
+
+            string input = GlobalVar.onScreen;
+
+            char[] ops = new char[] { '+', '-', '*', '/' };
+
+            int lastOpIndex = input.LastIndexOfAny(ops);
+
+            string before = "";
+            string lastNumber = input;
+
+            if (lastOpIndex != -1)
+            {
+                before = input.Substring(0, lastOpIndex + 1);
+                lastNumber = input.Substring(lastOpIndex + 1);
+            }
+
+            if (string.IsNullOrEmpty(lastNumber))
+                return;
+
+            if (lastNumber.StartsWith("-"))
+            {
+                lastNumber = lastNumber.Substring(1);
+            }
+            else
+            {
+                lastNumber = "-" + lastNumber;
+            }
+
+            GlobalVar.onScreen = before + lastNumber;
+            Screen.Text = GlobalVar.onScreen;
         }
     }
 }
