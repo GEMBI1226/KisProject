@@ -21,24 +21,67 @@ namespace KisProject
         private void Számológép_Load(object sender, EventArgs e)
         {
             Screen.Text = GlobalVar.onScreen;
-            /* AKI AKARJA MEGOLDHATJA A LEKEREKITETT GOMBOKAT
+            this.BackColor = Color.Black; // háttér iPhone-szerű
+
+            int diameter = 60; // fix körméret
+
             foreach (Control c in this.Controls)
             {
                 if (c is Button btn)
                 {
-                    GraphicsPath path = new GraphicsPath();
-                    int radius = 40; // mennyire legyen kerekítve a sarkok
+                    // "0" gomb: dupla széles
+                    if (btn.Text == "0")
+                    {
+                        btn.Width = diameter;
+                        btn.Height = diameter;
+                        GraphicsPath path0 = new GraphicsPath();
+                        path0.AddEllipse(0, 0, btn.Width, btn.Height);
+                        btn.Region = new Region(path0);
+                    }
+                    else
+                    {
+                        btn.Width = diameter;
+                        btn.Height = diameter;
+                        GraphicsPath path = new GraphicsPath();
+                        path.AddEllipse(0, 0, diameter, diameter);
+                        btn.Region = new Region(path);
+                    }
 
-                    path.AddArc(0, 0, radius, radius, 180, 90);
-                    path.AddArc(btn.Width - radius, 0, radius, radius, 270, 90);
-                    path.AddArc(btn.Width - radius, btn.Height - radius, radius, radius, 0, 90);
-                    path.AddArc(0, btn.Height - radius, radius, radius, 90, 90);
-                    path.CloseFigure();
+                    // szöveg középre
+                    btn.TextAlign = ContentAlignment.MiddleCenter;
+                    btn.Font = new Font("Segoe UI", 16, FontStyle.Bold);
+                    btn.FlatStyle = FlatStyle.Flat;
+                    btn.FlatAppearance.BorderSize = 0;
 
-                    btn.Region = new Region(path);
+                    // itt adjuk a távolságot
+                    btn.Margin = new Padding(5);
+
+                    // színezés iPhone szerint
+                    if (btn.Text == "÷" || btn.Text == "×" || btn.Text == "-" || btn.Text == "+")
+                    {
+                        btn.BackColor = Color.Orange;
+                        btn.ForeColor = Color.White;
+                    }
+                    else if (btn.Text == "AC" || btn.Text == "+/-" || btn.Text == "%")
+                    {
+                        btn.BackColor = Color.LightGray;
+                        btn.ForeColor = Color.Black;
+                    }
+                    else
+                    {
+                        btn.BackColor = Color.FromArgb(64, 64, 64);
+                        btn.ForeColor = Color.White;
+                    }
                 }
-            }*/
+            }
         }
+
+
+
+
+
+
+
 
 
         private void Number1_Click(object sender, EventArgs e)
