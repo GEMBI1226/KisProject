@@ -21,37 +21,42 @@ namespace KisProject
         private void Számológép_Load(object sender, EventArgs e)
         {
             Screen.Text = GlobalVar.onScreen;
+            this.BackColor = Color.Black; // háttér iPhone-szerű
+
+            int diameter = 60; // fix körméret
 
             foreach (Control c in this.Controls)
             {
                 if (c is Button btn)
                 {
-                    // négyzetméret kiszámolása (a kisebbik oldalból)
-                    int diameter = Math.Min(btn.Width, btn.Height);
+                    // "0" gomb: dupla széles
+                    if (btn.Text == "0")
+                    {
+                        btn.Width = diameter;
+                        btn.Height = diameter;
+                        GraphicsPath path0 = new GraphicsPath();
+                        path0.AddEllipse(0, 0, btn.Width, btn.Height);
+                        btn.Region = new Region(path0);
+                    }
+                    else
+                    {
+                        btn.Width = diameter;
+                        btn.Height = diameter;
+                        GraphicsPath path = new GraphicsPath();
+                        path.AddEllipse(0, 0, diameter, diameter);
+                        btn.Region = new Region(path);
+                    }
 
-                    // középpont kiszámítása
-                    int centerX = btn.Left + btn.Width / 2;
-                    int centerY = btn.Top + btn.Height / 2;
-
-                    // méret átállítása négyzetre
-                    btn.Width = diameter;
-                    btn.Height = diameter;
-
-                    // középre helyezés, hogy ne csússzanak el
-                    btn.Left = centerX - diameter / 2;
-                    btn.Top = centerY - diameter / 2;
-
-                    // kör régió létrehozása
-                    GraphicsPath path = new GraphicsPath();
-                    path.AddEllipse(0, 0, diameter, diameter);
-                    btn.Region = new Region(path);
-
-                    // iPhone-szerű stílus
+                    // szöveg középre
+                    btn.TextAlign = ContentAlignment.MiddleCenter;
+                    btn.Font = new Font("Segoe UI", 16, FontStyle.Bold);
                     btn.FlatStyle = FlatStyle.Flat;
                     btn.FlatAppearance.BorderSize = 0;
-                    btn.Font = new Font("Segoe UI", 14, FontStyle.Bold);
 
-                    // színezés
+                    // itt adjuk a távolságot
+                    btn.Margin = new Padding(5);
+
+                    // színezés iPhone szerint
                     if (btn.Text == "÷" || btn.Text == "×" || btn.Text == "-" || btn.Text == "+")
                     {
                         btn.BackColor = Color.Orange;
@@ -64,12 +69,16 @@ namespace KisProject
                     }
                     else
                     {
-                        btn.BackColor = Color.DimGray;
+                        btn.BackColor = Color.FromArgb(64, 64, 64);
                         btn.ForeColor = Color.White;
                     }
                 }
             }
         }
+
+
+
+
 
 
 
