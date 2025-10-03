@@ -57,7 +57,7 @@
             this.Number1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number1.ForeColor = System.Drawing.Color.White;
             this.Number1.Location = new System.Drawing.Point(27, 238);
-            this.Number1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Number1.Margin = new System.Windows.Forms.Padding(2);
             this.Number1.Name = "Number1";
             this.Number1.Size = new System.Drawing.Size(66, 33);
             this.Number1.TabIndex = 0;
@@ -71,7 +71,7 @@
             this.Number2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number2.ForeColor = System.Drawing.Color.White;
             this.Number2.Location = new System.Drawing.Point(97, 238);
-            this.Number2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Number2.Margin = new System.Windows.Forms.Padding(2);
             this.Number2.Name = "Number2";
             this.Number2.Size = new System.Drawing.Size(66, 33);
             this.Number2.TabIndex = 1;
@@ -85,7 +85,7 @@
             this.Number3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number3.ForeColor = System.Drawing.Color.White;
             this.Number3.Location = new System.Drawing.Point(173, 238);
-            this.Number3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Number3.Margin = new System.Windows.Forms.Padding(2);
             this.Number3.Name = "Number3";
             this.Number3.Size = new System.Drawing.Size(66, 33);
             this.Number3.TabIndex = 2;
@@ -99,7 +99,7 @@
             this.Number6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number6.ForeColor = System.Drawing.Color.White;
             this.Number6.Location = new System.Drawing.Point(173, 194);
-            this.Number6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Number6.Margin = new System.Windows.Forms.Padding(2);
             this.Number6.Name = "Number6";
             this.Number6.Size = new System.Drawing.Size(66, 33);
             this.Number6.TabIndex = 5;
@@ -113,7 +113,7 @@
             this.Number5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number5.ForeColor = System.Drawing.Color.White;
             this.Number5.Location = new System.Drawing.Point(97, 194);
-            this.Number5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Number5.Margin = new System.Windows.Forms.Padding(2);
             this.Number5.Name = "Number5";
             this.Number5.Size = new System.Drawing.Size(66, 33);
             this.Number5.TabIndex = 4;
@@ -127,7 +127,7 @@
             this.Number4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number4.ForeColor = System.Drawing.Color.White;
             this.Number4.Location = new System.Drawing.Point(27, 194);
-            this.Number4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Number4.Margin = new System.Windows.Forms.Padding(2);
             this.Number4.Name = "Number4";
             this.Number4.Size = new System.Drawing.Size(66, 33);
             this.Number4.TabIndex = 3;
@@ -141,7 +141,7 @@
             this.Number9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number9.ForeColor = System.Drawing.Color.White;
             this.Number9.Location = new System.Drawing.Point(173, 151);
-            this.Number9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Number9.Margin = new System.Windows.Forms.Padding(2);
             this.Number9.Name = "Number9";
             this.Number9.Size = new System.Drawing.Size(66, 33);
             this.Number9.TabIndex = 8;
@@ -155,7 +155,7 @@
             this.Number8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number8.ForeColor = System.Drawing.Color.White;
             this.Number8.Location = new System.Drawing.Point(97, 151);
-            this.Number8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Number8.Margin = new System.Windows.Forms.Padding(2);
             this.Number8.Name = "Number8";
             this.Number8.Size = new System.Drawing.Size(66, 33);
             this.Number8.TabIndex = 7;
@@ -169,7 +169,7 @@
             this.Number7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number7.ForeColor = System.Drawing.Color.White;
             this.Number7.Location = new System.Drawing.Point(27, 151);
-            this.Number7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Number7.Margin = new System.Windows.Forms.Padding(2);
             this.Number7.Name = "Number7";
             this.Number7.Size = new System.Drawing.Size(66, 33);
             this.Number7.TabIndex = 6;
@@ -183,7 +183,7 @@
             this.Number0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number0.ForeColor = System.Drawing.Color.White;
             this.Number0.Location = new System.Drawing.Point(27, 275);
-            this.Number0.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Number0.Margin = new System.Windows.Forms.Padding(2);
             this.Number0.Name = "Number0";
             this.Number0.Size = new System.Drawing.Size(136, 33);
             this.Number0.TabIndex = 9;
@@ -197,7 +197,7 @@
             this.btnDecimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDecimal.ForeColor = System.Drawing.Color.White;
             this.btnDecimal.Location = new System.Drawing.Point(173, 275);
-            this.btnDecimal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDecimal.Margin = new System.Windows.Forms.Padding(2);
             this.btnDecimal.Name = "btnDecimal";
             this.btnDecimal.Size = new System.Drawing.Size(66, 33);
             this.btnDecimal.TabIndex = 10;
@@ -211,7 +211,7 @@
             this.btnEquals.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEquals.ForeColor = System.Drawing.Color.White;
             this.btnEquals.Location = new System.Drawing.Point(243, 275);
-            this.btnEquals.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEquals.Margin = new System.Windows.Forms.Padding(2);
             this.btnEquals.Name = "btnEquals";
             this.btnEquals.Size = new System.Drawing.Size(66, 33);
             this.btnEquals.TabIndex = 14;
@@ -225,7 +225,7 @@
             this.btnMultiplication.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMultiplication.ForeColor = System.Drawing.Color.White;
             this.btnMultiplication.Location = new System.Drawing.Point(243, 151);
-            this.btnMultiplication.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMultiplication.Margin = new System.Windows.Forms.Padding(2);
             this.btnMultiplication.Name = "btnMultiplication";
             this.btnMultiplication.Size = new System.Drawing.Size(66, 33);
             this.btnMultiplication.TabIndex = 13;
@@ -239,7 +239,7 @@
             this.btnMinus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinus.ForeColor = System.Drawing.Color.White;
             this.btnMinus.Location = new System.Drawing.Point(243, 194);
-            this.btnMinus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMinus.Margin = new System.Windows.Forms.Padding(2);
             this.btnMinus.Name = "btnMinus";
             this.btnMinus.Size = new System.Drawing.Size(66, 33);
             this.btnMinus.TabIndex = 12;
@@ -253,7 +253,7 @@
             this.btnPlus.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPlus.ForeColor = System.Drawing.Color.White;
             this.btnPlus.Location = new System.Drawing.Point(243, 238);
-            this.btnPlus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPlus.Margin = new System.Windows.Forms.Padding(2);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.Size = new System.Drawing.Size(66, 33);
             this.btnPlus.TabIndex = 11;
@@ -267,7 +267,7 @@
             this.btnDivision.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDivision.ForeColor = System.Drawing.Color.White;
             this.btnDivision.Location = new System.Drawing.Point(243, 114);
-            this.btnDivision.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDivision.Margin = new System.Windows.Forms.Padding(2);
             this.btnDivision.Name = "btnDivision";
             this.btnDivision.Size = new System.Drawing.Size(66, 33);
             this.btnDivision.TabIndex = 18;
@@ -281,7 +281,7 @@
             this.btnSingChangeKey.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSingChangeKey.ForeColor = System.Drawing.Color.White;
             this.btnSingChangeKey.Location = new System.Drawing.Point(173, 114);
-            this.btnSingChangeKey.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSingChangeKey.Margin = new System.Windows.Forms.Padding(2);
             this.btnSingChangeKey.Name = "btnSingChangeKey";
             this.btnSingChangeKey.Size = new System.Drawing.Size(66, 33);
             this.btnSingChangeKey.TabIndex = 16;
@@ -295,7 +295,7 @@
             this.btnClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Location = new System.Drawing.Point(27, 114);
-            this.btnClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(66, 33);
             this.btnClear.TabIndex = 15;
@@ -310,7 +310,7 @@
             this.btnSimpleClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnSimpleClear.ForeColor = System.Drawing.Color.White;
             this.btnSimpleClear.Location = new System.Drawing.Point(97, 114);
-            this.btnSimpleClear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSimpleClear.Margin = new System.Windows.Forms.Padding(2);
             this.btnSimpleClear.Name = "btnSimpleClear";
             this.btnSimpleClear.Size = new System.Drawing.Size(66, 33);
             this.btnSimpleClear.TabIndex = 19;
@@ -358,7 +358,7 @@
             this.Controls.Add(this.Number2);
             this.Controls.Add(this.Number1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Számológép";
             this.Text = "Számológép";
             this.Load += new System.EventHandler(this.Számológép_Load);
