@@ -45,10 +45,11 @@
             this.btnMinus = new System.Windows.Forms.Button();
             this.btnPlus = new System.Windows.Forms.Button();
             this.btnDivision = new System.Windows.Forms.Button();
-            this.btnSingChangeKey = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSimpleClear = new System.Windows.Forms.Button();
             this.Screen = new System.Windows.Forms.Label();
+            this.btnSingChangeKey = new System.Windows.Forms.Button();
+            this.btnPercent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Number1
@@ -182,10 +183,10 @@
             this.Number0.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Number0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Number0.ForeColor = System.Drawing.Color.White;
-            this.Number0.Location = new System.Drawing.Point(27, 275);
+            this.Number0.Location = new System.Drawing.Point(97, 275);
             this.Number0.Margin = new System.Windows.Forms.Padding(2);
             this.Number0.Name = "Number0";
-            this.Number0.Size = new System.Drawing.Size(136, 33);
+            this.Number0.Size = new System.Drawing.Size(66, 33);
             this.Number0.TabIndex = 9;
             this.Number0.Text = "0";
             this.Number0.UseVisualStyleBackColor = false;
@@ -275,20 +276,6 @@
             this.btnDivision.UseVisualStyleBackColor = false;
             this.btnDivision.Click += new System.EventHandler(this.btnDivision_Click);
             // 
-            // btnSingChangeKey
-            // 
-            this.btnSingChangeKey.BackColor = System.Drawing.Color.DimGray;
-            this.btnSingChangeKey.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSingChangeKey.ForeColor = System.Drawing.Color.White;
-            this.btnSingChangeKey.Location = new System.Drawing.Point(173, 114);
-            this.btnSingChangeKey.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSingChangeKey.Name = "btnSingChangeKey";
-            this.btnSingChangeKey.Size = new System.Drawing.Size(66, 33);
-            this.btnSingChangeKey.TabIndex = 16;
-            this.btnSingChangeKey.Text = "+/-";
-            this.btnSingChangeKey.UseVisualStyleBackColor = false;
-            this.btnSingChangeKey.Click += new System.EventHandler(this.btnSingChangeKey_Click);
-            // 
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.DimGray;
@@ -331,16 +318,43 @@
             this.Screen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Screen.Click += new System.EventHandler(this.Screen_Click);
             // 
+            // btnSingChangeKey
+            // 
+            this.btnSingChangeKey.BackColor = System.Drawing.Color.DimGray;
+            this.btnSingChangeKey.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSingChangeKey.ForeColor = System.Drawing.Color.White;
+            this.btnSingChangeKey.Location = new System.Drawing.Point(27, 275);
+            this.btnSingChangeKey.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSingChangeKey.Name = "btnSingChangeKey";
+            this.btnSingChangeKey.Size = new System.Drawing.Size(66, 33);
+            this.btnSingChangeKey.TabIndex = 21;
+            this.btnSingChangeKey.Text = "+/-";
+            this.btnSingChangeKey.UseVisualStyleBackColor = false;
+            // 
+            // btnPercent
+            // 
+            this.btnPercent.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnPercent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPercent.ForeColor = System.Drawing.Color.White;
+            this.btnPercent.Location = new System.Drawing.Point(173, 114);
+            this.btnPercent.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPercent.Name = "btnPercent";
+            this.btnPercent.Size = new System.Drawing.Size(66, 33);
+            this.btnPercent.TabIndex = 22;
+            this.btnPercent.Text = "%";
+            this.btnPercent.UseVisualStyleBackColor = false;
+            // 
             // Számológép
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(331, 340);
+            this.Controls.Add(this.btnPercent);
+            this.Controls.Add(this.btnSingChangeKey);
             this.Controls.Add(this.Screen);
             this.Controls.Add(this.btnSimpleClear);
             this.Controls.Add(this.btnDivision);
-            this.Controls.Add(this.btnSingChangeKey);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.btnMultiplication);
@@ -384,10 +398,11 @@
         private System.Windows.Forms.Button btnMinus;
         private System.Windows.Forms.Button btnPlus;
         private System.Windows.Forms.Button btnDivision;
-        private System.Windows.Forms.Button btnSingChangeKey;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSimpleClear;
         private System.Windows.Forms.Label Screen;
+        private System.Windows.Forms.Button btnSingChangeKey;
+        private System.Windows.Forms.Button btnPercent;
     }
 }
 
