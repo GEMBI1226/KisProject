@@ -21,24 +21,58 @@ namespace KisProject
         private void Számológép_Load(object sender, EventArgs e)
         {
             Screen.Text = GlobalVar.onScreen;
-            /* AKI AKARJA MEGOLDHATJA A LEKEREKITETT GOMBOKAT
+
             foreach (Control c in this.Controls)
             {
                 if (c is Button btn)
                 {
+                    // négyzetméret kiszámolása (a kisebbik oldalból)
+                    int diameter = Math.Min(btn.Width, btn.Height);
+
+                    // középpont kiszámítása
+                    int centerX = btn.Left + btn.Width / 2;
+                    int centerY = btn.Top + btn.Height / 2;
+
+                    // méret átállítása négyzetre
+                    btn.Width = diameter;
+                    btn.Height = diameter;
+
+                    // középre helyezés, hogy ne csússzanak el
+                    btn.Left = centerX - diameter / 2;
+                    btn.Top = centerY - diameter / 2;
+
+                    // kör régió létrehozása
                     GraphicsPath path = new GraphicsPath();
-                    int radius = 40; // mennyire legyen kerekítve a sarkok
-
-                    path.AddArc(0, 0, radius, radius, 180, 90);
-                    path.AddArc(btn.Width - radius, 0, radius, radius, 270, 90);
-                    path.AddArc(btn.Width - radius, btn.Height - radius, radius, radius, 0, 90);
-                    path.AddArc(0, btn.Height - radius, radius, radius, 90, 90);
-                    path.CloseFigure();
-
+                    path.AddEllipse(0, 0, diameter, diameter);
                     btn.Region = new Region(path);
+
+                    // iPhone-szerű stílus
+                    btn.FlatStyle = FlatStyle.Flat;
+                    btn.FlatAppearance.BorderSize = 0;
+                    btn.Font = new Font("Segoe UI", 14, FontStyle.Bold);
+
+                    // színezés
+                    if (btn.Text == "÷" || btn.Text == "×" || btn.Text == "-" || btn.Text == "+")
+                    {
+                        btn.BackColor = Color.Orange;
+                        btn.ForeColor = Color.White;
+                    }
+                    else if (btn.Text == "AC" || btn.Text == "+/-" || btn.Text == "%")
+                    {
+                        btn.BackColor = Color.LightGray;
+                        btn.ForeColor = Color.Black;
+                    }
+                    else
+                    {
+                        btn.BackColor = Color.DimGray;
+                        btn.ForeColor = Color.White;
+                    }
                 }
-            }*/
+            }
         }
+
+
+
 
 
         private void Number1_Click(object sender, EventArgs e)
