@@ -27,23 +27,23 @@ namespace KisProject
             {
                 if (c is Button btn)
                 {
-                    // A gomb méretének a kisebbik oldalhoz igazítása
+                    
                     int size = Math.Min(btn.Width, btn.Height);
                     btn.Width = size;
                     btn.Height = size;
 
-                    // Kör létrehozása
+                 
                     GraphicsPath path = new GraphicsPath();
                     path.AddEllipse(0, 0, size, size);
                     btn.Region = new Region(path);
 
-                    // Szöveg középre
+                    
                     btn.TextAlign = ContentAlignment.MiddleCenter;
                     btn.Font = new Font("Segoe UI", 16, FontStyle.Bold);
                     btn.FlatStyle = FlatStyle.Flat;
                     btn.FlatAppearance.BorderSize = 0;
 
-                    // Margin a gombok között
+                    
                     btn.Margin = new Padding(5);
                 }
             }
@@ -319,13 +319,13 @@ namespace KisProject
             {
                 string expression = GlobalVar.onScreen;
 
-                // Mindig pont legyen a tizedes
+                
                 expression = expression.Replace(",", ".");
 
                 DataTable dt = new DataTable();
                 object result = dt.Compute(expression, null);
 
-                // Konvertálás invariant kultúrával
+               
                 double varResult = Convert.ToDouble(result, System.Globalization.CultureInfo.InvariantCulture);
 
                 if (double.IsNaN(varResult) || double.IsInfinity(varResult))
@@ -333,7 +333,7 @@ namespace KisProject
                     throw new Exception("Végtelen lett az eredmény");
                 }
 
-                // Kiírás mindig ponttal
+                
                 GlobalVar.onScreen = varResult.ToString(System.Globalization.CultureInfo.InvariantCulture);
                 Screen.Text = GlobalVar.onScreen;
             }
