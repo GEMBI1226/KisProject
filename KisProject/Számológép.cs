@@ -80,10 +80,16 @@ namespace KisProject
 
         private void btnDivision_Click(object sender, EventArgs e)
         {
-            GlobalVar.onScreen += "/";
-            Screen.Text = GlobalVar.onScreen;
-
-
+            if (GlobalVar.onScreen == "Syntax Error" || GlobalVar.onScreen == "")
+            {
+                GlobalVar.onScreen = "";
+                Screen.Text = GlobalVar.onScreen;
+            }
+            else
+            {
+                GlobalVar.onScreen += "/";
+                Screen.Text = GlobalVar.onScreen;
+            }
         }
 
         private void Number7_Click(object sender, EventArgs e)
@@ -135,10 +141,16 @@ namespace KisProject
 
         private void btnMultiplication_Click(object sender, EventArgs e)
         {
-            GlobalVar.onScreen += "*";
-            Screen.Text = GlobalVar.onScreen;
-
-
+            if (GlobalVar.onScreen == "Syntax Error" || GlobalVar.onScreen == "")
+            {
+                GlobalVar.onScreen = "";
+                Screen.Text = GlobalVar.onScreen;
+            }
+            else
+            {
+                GlobalVar.onScreen += "*";
+                Screen.Text = GlobalVar.onScreen;
+            }
         }
 
         private void Number4_Click(object sender, EventArgs e)
@@ -191,9 +203,16 @@ namespace KisProject
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
-            GlobalVar.onScreen += "-";
-            Screen.Text = GlobalVar.onScreen;
-
+            if (GlobalVar.onScreen == "Syntax Error" || GlobalVar.onScreen == "")
+            {
+                GlobalVar.onScreen = "";
+                Screen.Text = GlobalVar.onScreen;
+            }
+            else
+            {
+                GlobalVar.onScreen += "-";
+                Screen.Text = GlobalVar.onScreen;
+            }
 
         }
 
@@ -232,10 +251,16 @@ namespace KisProject
 
         private void btnPlus_Click(object sender, EventArgs e)
         {
-            GlobalVar.onScreen += "+";
-            Screen.Text = GlobalVar.onScreen;
-
-
+            if (GlobalVar.onScreen == "Syntax Error" || GlobalVar.onScreen == "")
+            {
+                GlobalVar.onScreen = "";
+                Screen.Text = GlobalVar.onScreen;
+            }
+            else
+            {
+                GlobalVar.onScreen += "+";
+                Screen.Text = GlobalVar.onScreen;
+            }
         }
 
         private void btnSingChangeKey_Click(object sender, EventArgs e)
@@ -273,6 +298,16 @@ namespace KisProject
 
         private void btnDecimal_Click(object sender, EventArgs e)
         {
+            if (GlobalVar.onScreen == "Syntax Error" || GlobalVar.onScreen == "")
+            {
+                GlobalVar.onScreen = "";
+                Screen.Text = GlobalVar.onScreen;
+            }
+            else
+            {
+                GlobalVar.onScreen += ".";
+                Screen.Text = GlobalVar.onScreen;
+            }
 
         }
 
