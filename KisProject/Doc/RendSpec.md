@@ -23,22 +23,22 @@ A program az alapvető aritmetikai műveletek (összeadás, kivonás, szorzás, 
 
 A rendszer fő moduljai:
 
-### 🖥️ Felhasználói felület (UI)
+### Felhasználói felület (UI)
 - Megjeleníti a gombokat (0–9, +, –, ×, ÷, =, C, CE).  
 - Tartalmazza a kijelző mezőt, ahol a beírt számok és az eredmény megjelennek.  
 - Kezeli a felhasználói interakciókat (gombnyomások).
 
-### ⚙️ Logikai vezérlő
+### Logikai vezérlő
 - Összegyűjti és értelmezi a gombnyomásokat.  
 - Eldönti, mikor kell műveletet végrehajtani.  
 - Továbbítja az adatokat a számítási modulnak.
 
-### 🔢 Számítási modul
+### Számítási modul
 - Végrehajtja a műveleteket: +, –, ×, ÷.  
 - Kezeli a hibás műveleteket (pl. 0-val osztás).  
 - Eredményt ad vissza a felhasználói felület számára.
 
-### 🚫 Hibakezelő modul
+### Hibakezelő modul
 - Ellenőrzi az érvénytelen műveleteket.  
 - Felhasználóbarát üzeneteket jelenít meg (pl. “Syntax error”).
 
@@ -64,7 +64,7 @@ Kód másolása
 
 ## 5. Felhasználói felület terve
 
-### 🎨 Dizájn jellemzői
+### Dizájn jellemzői
 - Letisztult, **iPhone-stílusú kinézet**.  
 - Lekerekített gombok, árnyékolt hatások.  
 - Modern színpaletta (kontrasztos gombok).  
@@ -113,12 +113,12 @@ Kód másolása
 
 ## 9. Fejlesztési korlátok és jövőbeli bővítések
 
-### 🔒 Korlátok
+### Korlátok
 - Csak alapműveletek támogatottak.  
 - Nem tartalmaz tudományos funkciókat.  
 - Kizárólag Windows rendszeren fut.
 
-### 🚀 Jövőbeli bővítések
+### Jövőbeli bővítések
 - Tudományos mód (sin, cos, √ stb.).  
 - Memóriafunkciók (M+, M–, MR).  
 - Téma- és színválasztási lehetőség.  
