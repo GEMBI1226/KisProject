@@ -9,9 +9,9 @@ A programot Visual Studio-ban(2022, vagy újabb) álmodtuk meg, C# alapon, hisze
 
 A projekt dokumentációja három részre van bontva:
 
-- [Követelményspecifikáció](Kovspec.md)  
-- [Funkcionális specifikáció](projectDocumentation.md)  
-- [Rendszerterv](RendSpec.md)  
+- [Követelményspecifikáció](https://github.com/GEMBI1226/KisProject/blob/master/KisProject/Doc/Kovspec.md)  
+- [Funkcionális specifikáció](https://github.com/GEMBI1226/KisProject/blob/master/KisProject/Doc/projectDocumentation.md)  
+- [Rendszerterv](https://github.com/GEMBI1226/KisProject/blob/master/KisProject/Doc/RendSpec.md)  
 
 ## Funkciók
 Mivel számítógépes rendszerre terveztük meg, így egy egyszerűsített funkcióval rendelkező számológép használatát nyújtjuk a felhasználóknak. Ezek közé a funkciók közé tartoznak:
